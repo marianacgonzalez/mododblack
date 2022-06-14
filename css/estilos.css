@@ -243,7 +243,18 @@ body{
 body{
     background-color: black;
 }
-
+.tituloContacto{
+    font-size: 50px;
+}
+.mb-3{
+    display: flex;
+    margin:20%
+}
+.mb-3-1{
+ display: flex;
+ margin: 20%;
+ height: 10%;
+}
 .contactocabeza{
     background-color: aliceblue;
     display: flex;
@@ -267,6 +278,11 @@ body{
     padding: 10%;
     
 }
+/*Footer contacto*/
+
+
+
+
 
 /* ESTILOS DONDE ESTAMOS*/
 body{
