@@ -101,6 +101,7 @@ body .galeria .galeria-link .mood {
   background-image: url("../images/buzomoodjpeg.jpg");
   height: 200px;
   box-shadow: 1px 1px 10px #f4f4f4;
+  background-repeat: no-repeat;
 }
 body .galeria .galeria-link .hoodie {
   background-image: url("../images/hoodiedarkpng.png");
@@ -111,6 +112,7 @@ body .galeria .galeria-link .cargo {
   background-image: url("../images/cargoblack.jpg");
   height: 200px;
   box-shadow: 1px 1px 10px #f4f4f4;
+  background-repeat: no-repeat;
 }
 body .galeria .galeria-link .gorritoblack {
   background-image: url("../images/gorritoblack.jpg");
