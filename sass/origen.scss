@@ -3,6 +3,22 @@
     padding: 0%;
     margin: 0%;
 }
+@mixin titulo ($color, $efecto, $fontsize) 
+{
+    color: $color;
+    text-shadow: $efecto ;
+    font-size:$fontsize ; 
+}
+$colores:(
+    off: rgb(248, 244, 244),
+    promos:  rgb(255, 255, 255),
+);
+@each $h2, $valor in $colores {
+    .h2-#{$h2} {
+        color: $valor;
+    }
+}
+
 body 
 {
     background-color: black;
@@ -10,16 +26,13 @@ body
     display: grid;
     grid-template-rows:auto;
     h1
-    {
+    {   @include titulo(rgb(253, 237, 251), 1px 1px 10px rgba(232, 196, 240, 0.534), 70px );
         display: flex;
         flex-flow: wrap;
-        color:rgb(253, 237, 251);
         text-align: center;
         font-weight: bold;
         font-style: normal;
-        font-size: 70px;
         justify-content: center;
-        text-shadow: 1px 1px 10px rgba(232, 196, 240, 0.534);
     }
         ul
         {
@@ -109,48 +122,43 @@ body
                 height: 200px;
                 box-shadow: 1px 1px 10px #f4f4f4;
                 background-repeat: no-repeat;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+
             }
             .hoodie{
                 background-image: url("../images/hoodiedarkpng.png");
-                height: 200px;
-                box-shadow: 1px 1px 10px #f4f4f4;
+                @extend .mood;
             }
             .cargo{
                 background-image: url("../images/cargoblack.jpg");
-                height: 200px;
-                box-shadow: 1px 1px 10px #f4f4f4;
-                background-repeat: no-repeat;
+                @extend .mood;
             }
             
             .gorritoblack{
                 background-image: url("../images/gorritoblack.jpg");
-                height: 200px;
-                box-shadow: 1px 1px 10px #f4f4f4;
+                @extend .mood;
             }
             .angels{
                 background-image: url("../images/angelsjpeg.jpg");
-                height: 200px;
-                box-shadow: 1px 1px 10px #f4f4f4;
+                @extend .mood;
             }
             .lol{
                 background-image: url("../images/buzolol.jpg");
-                height: 200px;
-                box-shadow: 1px 1px 10px #f4f4f4;
+                @extend .mood;
             }
             .faced{
                 background-image: url("../images/hoodiefacedjpeg.jpg");
-                height: 200px;
-                box-shadow: 1px 1px 10px #f4f4f4;
+                @extend .mood;
             }
             .nirvana{
                 background-image: url("../images/buzonirvana.jpg");
-                height: 200px;
-                box-shadow: 1px 1px 10px #f4f4f4;
+                @extend .mood;
             }
             .buzonegro{
                 background-image: url("../images/buzonegro.jpg");
-                height: 200px;
-                box-shadow: 1px 1px 10px #f4f4f4;
+                @extend .mood;
             }
             
         }
@@ -262,6 +270,11 @@ body{
     margin: 20%;
 }
 }
+//CONTACTO//
+
+//DONDE ESTAMOS//
+
+
 
 
 @import "../sass/mediaq/mq";

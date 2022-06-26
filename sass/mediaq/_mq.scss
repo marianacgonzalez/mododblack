@@ -16,12 +16,14 @@ h1{
     font-size: 50px; 
     margin: 2px 100px 1%;
     padding: 1px;
+    flex-wrap: wrap;
 }   
 .promos{
     font-size: 25px;
     margin: 8px 8%;
     padding: 8px 8%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .menuproductos{
@@ -79,11 +81,15 @@ h1{
     }
         }
     .off{
+        display: flex;
         font-size: 30px;
+        flex-wrap: wrap;
     }
     .promos{
+        display: flex;
         margin: 8px 5%;
         padding: 3px;
+        flex-wrap: wrap;
     }
 
     ul{

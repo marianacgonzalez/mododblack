@@ -1,0 +1,5 @@
+Agregue etiquetas de meta keywords en el index y en las otras 4 paginas.
+Agregue  etiquetas de meta description en el index.
+Aplique extend en la galeria del index para simplificar las propiedades que se repiten en las fotos que son las mismas en todas, excepto la ruta.
+Aplique mixin en los titulos de todo el sitio que quiero que sean iguales.
+Aplique maps en los titulos de off y promos en index. 

@@ -4,6 +4,14 @@
   margin: 0%;
 }
 
+.h2-off {
+  color: rgb(248, 244, 244);
+}
+
+.h2-promos {
+  color: rgb(255, 255, 255);
+}
+
 body {
   background-color: black;
   font-family: "anton", sans-serif;
@@ -11,15 +19,15 @@ body {
   grid-template-rows: auto;
 }
 body h1 {
+  color: rgb(253, 237, 251);
+  text-shadow: 1px 1px 10px rgba(232, 196, 240, 0.534);
+  font-size: 70px;
   display: flex;
   flex-flow: wrap;
-  color: rgb(253, 237, 251);
   text-align: center;
   font-weight: bold;
   font-style: normal;
-  font-size: 70px;
   justify-content: center;
-  text-shadow: 1px 1px 10px rgba(232, 196, 240, 0.534);
 }
 body ul {
   list-style: none;
@@ -97,52 +105,38 @@ body .galeria .galeria-link:hover {
   background-size: 200px auto;
   box-shadow: 1px 1px 10px rgba(244, 244, 244, 0.5803921569);
 }
-body .galeria .galeria-link .mood {
+body .galeria .galeria-link .mood, body .galeria .galeria-link .buzonegro, body .galeria .galeria-link .nirvana, body .galeria .galeria-link .faced, body .galeria .galeria-link .lol, body .galeria .galeria-link .angels, body .galeria .galeria-link .gorritoblack, body .galeria .galeria-link .cargo, body .galeria .galeria-link .hoodie {
   background-image: url("../images/buzomoodjpeg.jpg");
   height: 200px;
   box-shadow: 1px 1px 10px #f4f4f4;
   background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 body .galeria .galeria-link .hoodie {
   background-image: url("../images/hoodiedarkpng.png");
-  height: 200px;
-  box-shadow: 1px 1px 10px #f4f4f4;
 }
 body .galeria .galeria-link .cargo {
   background-image: url("../images/cargoblack.jpg");
-  height: 200px;
-  box-shadow: 1px 1px 10px #f4f4f4;
-  background-repeat: no-repeat;
 }
 body .galeria .galeria-link .gorritoblack {
   background-image: url("../images/gorritoblack.jpg");
-  height: 200px;
-  box-shadow: 1px 1px 10px #f4f4f4;
 }
 body .galeria .galeria-link .angels {
   background-image: url("../images/angelsjpeg.jpg");
-  height: 200px;
-  box-shadow: 1px 1px 10px #f4f4f4;
 }
 body .galeria .galeria-link .lol {
   background-image: url("../images/buzolol.jpg");
-  height: 200px;
-  box-shadow: 1px 1px 10px #f4f4f4;
 }
 body .galeria .galeria-link .faced {
   background-image: url("../images/hoodiefacedjpeg.jpg");
-  height: 200px;
-  box-shadow: 1px 1px 10px #f4f4f4;
 }
 body .galeria .galeria-link .nirvana {
   background-image: url("../images/buzonirvana.jpg");
-  height: 200px;
-  box-shadow: 1px 1px 10px #f4f4f4;
 }
 body .galeria .galeria-link .buzonegro {
   background-image: url("../images/buzonegro.jpg");
-  height: 200px;
-  box-shadow: 1px 1px 10px #f4f4f4;
 }
 
 body {
@@ -252,12 +246,14 @@ body .h2tabla {
     font-size: 50px;
     margin: 2px 100px 1%;
     padding: 1px;
+    flex-wrap: wrap;
   }
   .promos {
     font-size: 25px;
     margin: 8px 8%;
     padding: 8px 8%;
     display: flex;
+    flex-wrap: wrap;
   }
   .menuproductos {
     margin: 20px;
@@ -312,11 +308,15 @@ body .h2tabla {
     text-align: center;
   }
   .off {
+    display: flex;
     font-size: 30px;
+    flex-wrap: wrap;
   }
   .promos {
+    display: flex;
     margin: 8px 5%;
     padding: 3px;
+    flex-wrap: wrap;
   }
   ul {
     justify-content: center;
