@@ -263,6 +263,16 @@ body{
 body{
     background-color: black;
 }
+
+.contactocabeza{
+    background-color: aliceblue;
+    display: flex;
+    flex-flow: column;
+    margin: 15%;
+    padding: 0px;
+    align-items: center;
+}
+
 .tituloContacto{
     font-size: 50px;
 }
@@ -275,20 +285,13 @@ body{
  margin: 20%;
  height: 10%;
 }
-.contactocabeza{
-    background-color: aliceblue;
-    display: flex;
-    flex-flow: column;
-    margin: 15%;
-    padding: 0px;
-    align-items: center;
-}
+
 .quienessomos{
     background-color: white;
     color: black;
     text-align: center;
     margin: 5%;
-    padding: 0px;
+    padding: 2%;
 }
 .descripcion{
     background-color: white;
@@ -317,6 +320,15 @@ body{
     text-align: center;
     margin: 5%;
     padding: 0px;
+    transition: width 12s;
+    box-shadow: 1px 1px 10px #f4f4f493;
+    color: #fafafa;
+    text-shadow: -3px 3px #b69999, -3px -3px #8a737e, 3px -3px #a09999, 3px 3px #d1c0cb, 6px 6px rgb(190, 176, 176);;
+}
+.ubicacion:hover{
+    width: 80%;
+    height: 40%;
+    box-shadow: 1px 1px 10px #f4f4f4;
 }
 
 

@@ -45,6 +45,10 @@ body ul .sinsubrayar {
   float: left;
   padding: 0 30px;
 }
+body ul .sinsubrayar:hover {
+  cursor: pointer;
+  color: pink;
+}
 body .off {
   display: flex;
   color: white;
@@ -165,14 +169,14 @@ body main .clasebuzos {
   background-position: unset;
   background-repeat: inherit;
 }
-body main .clasebuzos .galeriaProductos {
+body main .galeriaProductos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   height: 180px;
 }
-body main .clasebuzos .precio1 {
+body main .precio1 {
   display: grid;
   grid-template-columns: 200px 231px 200px 200px 200px;
   background-color: white;
@@ -229,6 +233,74 @@ body .h2tabla {
   text-align: center;
   padding: 30px;
   margin: 20%;
+}
+
+body {
+  background-color: black;
+  text-align: center;
+}
+body .tituloContacto {
+  font-size: 8vh;
+}
+body .none2 {
+  color: rgb(228, 159, 171);
+  text-decoration: none;
+}
+body .none2:hover {
+  color: #d1c0cb;
+  cursor: pointer;
+}
+body .none3 {
+  color: rgb(228, 159, 171);
+  text-decoration: none;
+}
+body .none3:hover {
+  color: #d1c0cb;
+  cursor: pointer;
+}
+body .contactocabeza {
+  background-color: aliceblue;
+  display: flex;
+  flex-flow: column;
+  margin: 15%;
+  padding: 0px;
+  align-items: center;
+}
+body .mb-3 {
+  display: flex;
+  margin: 20%;
+}
+body .mb-3 .form-control {
+  border-radius: 19.25rem;
+}
+body .mb-3-1 {
+  display: flex;
+  margin: 20%;
+  height: 10%;
+}
+body .mb-3-1 .form-control {
+  border-radius: 19.25rem;
+}
+
+body {
+  background-color: black;
+}
+body .tituloubi {
+  color: aliceblue;
+}
+body .ubicacion {
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin: 5%;
+  padding: 1%;
+  box-shadow: 1px 1px 10px rgba(244, 244, 244, 0.5764705882);
+  text-shadow: -3px 3px #b69999, -3px -3px #8a737e, 3px -3px #a09999, 3px 3px #d1c0cb, 6px 6px rgb(190, 176, 176);
+  font-size: 4vh;
+}
+body .ubicacion:hover {
+  box-shadow: 2px 2px 10px #f4f4f4;
+  text-align: center;
 }
 
 @media (min-width: 481px) and (max-width: 1023px) {

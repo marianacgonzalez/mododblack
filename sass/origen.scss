@@ -51,6 +51,10 @@ body
                 float: left;
                 padding: 0 30px;
             }  
+            .sinsubrayar:hover{
+                cursor:pointer;
+                color: pink;
+            }
         }
     .off
     {
@@ -164,7 +168,7 @@ body
         }
     }
 }
-
+//PRODUCTOS// 
 body
 {
     background-color: black;
@@ -194,6 +198,7 @@ body
         background-image: url("../images/hoodiefacedjpeg.jpg");
         background-position: unset;
         background-repeat: inherit;
+        }
             .galeriaProductos
             {
             display: flex;
@@ -213,7 +218,7 @@ body
             justify-content: space-around;
             list-style: none;    
             }
-        }
+        
         .clasepants
         { 
         background-color: whitesmoke;
@@ -247,7 +252,7 @@ body
         }
     }
 }
-
+//MEDIDAS//
 body{
     background-color: black;
 
@@ -271,9 +276,81 @@ body{
 }
 }
 //CONTACTO//
+body
+{
+    background-color: black;
+    text-align: center;
+    .tituloContacto
+    { 
+    font-size: 8vh;
+    }
+    .none2{
+        color:rgb(228, 159, 171);
+        text-decoration: none;
+    }
+    .none2:hover{
+        color: #d1c0cb;
+        cursor: pointer;
+    }
+    .none3{
+        color: rgb(228, 159, 171);
+        text-decoration: none;
+    }
+    .none3:hover{
+        color: #d1c0cb;
+        cursor: pointer;
+    }
+    .contactocabeza{
+    background-color: aliceblue;
+    display: flex;
+    flex-flow: column;
+    margin: 15%;
+    padding: 0px;
+    align-items: center;
+}
+    .mb-3
+    {
+    display: flex;
+    margin:20%;
+    .form-control{
+        border-radius: 19.25rem;
+    }
+    }
+    .mb-3-1
+    {
+    display: flex;
+    margin: 20%;
+    height: 10%;
+    .form-control{
+        border-radius: 19.25rem;
+    }
+    }
+
+}
+
 
 //DONDE ESTAMOS//
-
+body{
+    background-color: black;
+    .tituloubi
+    {
+        color: aliceblue;
+    }
+.ubicacion{
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin: 5%;
+    padding: 1%;
+    box-shadow: 1px 1px 10px #f4f4f493;
+    text-shadow: -3px 3px #b69999, -3px -3px #8a737e, 3px -3px #a09999, 3px 3px #d1c0cb, 6px 6px rgb(190, 176, 176);;
+    font-size: 4vh;
+}
+.ubicacion:hover{
+    box-shadow: 2px 2px 10px #f4f4f4;
+    text-align: center
+}
+}
 
 
 
