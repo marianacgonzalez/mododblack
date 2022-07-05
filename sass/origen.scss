@@ -70,13 +70,13 @@ body
         box-shadow: 1px 1px 10px #f4f4f493;
         color: #fafafa;
         text-shadow: -3px 3px #b69999, -3px -3px #8a737e, 3px -3px #a09999, 3px 3px #d1c0cb, 6px 6px rgb(190, 176, 176);;
-        .off:hover
-        {
-            width: 80%;
-            height: 40%;
-            box-shadow: 1px 1px 10px #f4f4f4;
-        }
     }   
+    .off:hover
+    {
+        width: 80%;
+        height: 40%;
+        box-shadow: 1px 1px 10px #f4f4f4;
+    }
     .promos
     {
         color: white;
@@ -91,13 +91,13 @@ body
         box-shadow: 1px 1px 10px #f4f4f49c;
         color: #fafafa;
         text-shadow: -3px 3px #b69999, -3px -3px #8a737e, 3px -3px #a09999, 3px 3px #d1c0cb, 6px 6px rgb(190, 176,176);;
-        .promos:hover 
+    }
+    .promos:hover 
         { 
             width: 42% ;
             height: 50% 50% 50% 50%;   
             box-shadow: 1px 1px 10px #f4f4f4;
         }
-    }
     .galeria
     {
         background-color:black;

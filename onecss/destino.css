@@ -63,7 +63,7 @@ body .off {
   color: #fafafa;
   text-shadow: -3px 3px #b69999, -3px -3px #8a737e, 3px -3px #a09999, 3px 3px #d1c0cb, 6px 6px rgb(190, 176, 176);
 }
-body .off .off:hover {
+body .off:hover {
   width: 80%;
   height: 40%;
   box-shadow: 1px 1px 10px #f4f4f4;
@@ -82,7 +82,7 @@ body .promos {
   color: #fafafa;
   text-shadow: -3px 3px #b69999, -3px -3px #8a737e, 3px -3px #a09999, 3px 3px #d1c0cb, 6px 6px rgb(190, 176, 176);
 }
-body .promos .promos:hover {
+body .promos:hover {
   width: 42%;
   height: 50% 50% 50% 50%;
   box-shadow: 1px 1px 10px #f4f4f4;
@@ -304,23 +304,23 @@ body .ubicacion:hover {
 }
 
 @media (min-width: 481px) and (max-width: 1023px) {
-  h1 {
+  body h1 {
     font-size: 50px;
   }
-  h1 ul {
+  body ul {
     margin: 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  .off {
+  body .off {
     display: flex;
     font-size: 50px;
     margin: 2px 100px 1%;
     padding: 1px;
     flex-wrap: wrap;
   }
-  .promos {
+  body.promos {
     font-size: 25px;
     margin: 8px 8%;
     padding: 8px 8%;
@@ -368,26 +368,35 @@ body .ubicacion:hover {
   }
 }
 @media (max-width: 480px) {
-  h1 {
+  body h1 {
     font-size: 50px;
   }
-  h1 ul {
+  body ul {
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
-    margin: 80px;
-    font-size: 100%;
+    margin: 9vh;
+    font-size: 150%;
     text-align: center;
+    align-items: center;
+    flex-direction: column;
   }
-  .off {
+  body.off {
     display: flex;
     font-size: 30px;
     flex-wrap: wrap;
+    margin: 1vh 3vh;
+    padding: 1vh;
   }
-  .promos {
+  body.promos {
     display: flex;
     margin: 8px 5%;
     padding: 3px;
+    flex-wrap: wrap;
+  }
+  body .galeria {
+    justify-content: center;
+    max-width: 80vw;
     flex-wrap: wrap;
   }
   ul {

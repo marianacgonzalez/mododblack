@@ -1,31 +1,33 @@
 @media(min-width:1024px){}
-
+//TABLET//
 @media(min-width:481px) and (max-width:1023px){
-
-h1{
+//INDEX//
+    body h1
+    {
     font-size: 50px;
-    ul{
+    }
+    body ul{
         margin: 20px;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap; 
     }
-}
-.off{
+
+body .off{
     display: flex;
     font-size: 50px; 
     margin: 2px 100px 1%;
     padding: 1px;
     flex-wrap: wrap;
 }   
-.promos{
+body.promos{
     font-size: 25px;
     margin: 8px 8%;
     padding: 8px 8%;
     display: flex;
     flex-wrap: wrap;
 }
-
+//PRODUCTOS//
 .menuproductos{
     margin: 20px;
     padding: 50px;
@@ -66,32 +68,41 @@ h1{
     }
 }
 }
-
+//SMARTPHONE//
 @media(max-width:480px){
-    h1{
+    body h1{
         font-size: 50px;
-    
-    ul{
+    }
+    body ul{
         padding:50px;
         display: flex;
         flex-wrap: wrap;
-        margin: 80px;
-        font-size: 100%;
+        margin: 9vh;
+        font-size: 150%;
         text-align: center;
+        align-items: center;
+        flex-direction: column;
     }
-        }
-    .off{
+        
+    body.off{
         display: flex;
         font-size: 30px;
         flex-wrap: wrap;
+        margin: 1vh 3vh;
+        padding: 1vh;
     }
-    .promos{
+    body.promos{
         display: flex;
         margin: 8px 5%;
         padding: 3px;
         flex-wrap: wrap;
     }
-
+    body .galeria {
+        justify-content: center;
+        max-width: 80vw;
+        flex-wrap: wrap;
+    }
+//PRODUCTOS SMARTPHONE//
     ul{
         justify-content: center;
     }
