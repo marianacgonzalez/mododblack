@@ -107,12 +107,12 @@ body .galeria .galeria-link {
 }
 body .galeria .galeria-link:hover {
   background-size: 200px auto;
-  box-shadow: 1px 1px 10px rgba(244, 244, 244, 0.5803921569);
+  box-shadow: 1px 1px 10px #ac5e92;
 }
-body .galeria .galeria-link .mood, body .galeria .galeria-link .buzonegro, body .galeria .galeria-link .nirvana, body .galeria .galeria-link .faced, body .galeria .galeria-link .lol, body .galeria .galeria-link .angels, body .galeria .galeria-link .gorritoblack, body .galeria .galeria-link .cargo, body .galeria .galeria-link .hoodie {
+body .galeria .galeria-link .mood, body main .galeria .galeria-link .buzonegro, body main .galeria .galeria-link .nirvana, body main .galeria .galeria-link .faced, body main .galeria .galeria-link .lol, body main .galeria .galeria-link .angels, body main .galeria .galeria-link .gorritoblack, body main .galeria .galeria-link .cargo, body main .galeria .galeria-link .hoodie, body .galeria .galeria-link .buzonegro, body .galeria .galeria-link .nirvana, body .galeria .galeria-link .faced, body .galeria .galeria-link .lol, body .galeria .galeria-link .angels, body .galeria .galeria-link .gorritoblack, body .galeria .galeria-link .cargo, body .galeria .galeria-link .hoodie {
   background-image: url("../images/buzomoodjpeg.jpg");
-  height: 200px;
-  box-shadow: 1px 1px 10px #f4f4f4;
+  height: 25vh;
+  box-shadow: 1px 1px 10px #ac5e92;
   background-repeat: no-repeat;
   background-size: contain;
   background-repeat: no-repeat;
@@ -122,13 +122,13 @@ body .galeria .galeria-link .hoodie {
   background-image: url("../images/hoodiedarkpng.png");
 }
 body .galeria .galeria-link .cargo {
-  background-image: url("../images/cargoblack.jpg");
+  background-image: url("../images/angelsjpeg.jpg");
 }
 body .galeria .galeria-link .gorritoblack {
   background-image: url("../images/gorritoblack.jpg");
 }
 body .galeria .galeria-link .angels {
-  background-image: url("../images/angelsjpeg.jpg");
+  background-image: url("../images/cargoblack.jpg");
 }
 body .galeria .galeria-link .lol {
   background-image: url("../images/buzolol.jpg");
@@ -159,59 +159,131 @@ body .headerProductos .tituloproductos {
   color: white;
 }
 body main .clasebuzos {
-  background: whitesmoke;
+  background: rgb(70, 68, 68);
   text-align: center;
+  color: #fafafa;
+  box-shadow: 1px 1px 10px #ac5e92;
   padding: 5vh;
   margin: 30px;
   display: grid;
   grid-template-rows: auto;
-  background-image: url("../images/hoodiefacedjpeg.jpg");
   background-position: unset;
   background-repeat: inherit;
 }
-body main .galeriaProductos {
+body main .galeria {
+  background-color: black;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  max-width: 100vw;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  height: 180px;
 }
-body main .precio1 {
-  display: grid;
-  grid-template-columns: 200px 231px 200px 200px 200px;
-  background-color: white;
-  color: black;
-  margin: 8%;
-  padding: 10px;
-  justify-content: space-around;
-  list-style: none;
+body main .galeria .galeria-link {
+  display: inline-block;
+  height: 180px;
+  width: 180px;
+  margin: 15px;
+  background-size: 180px auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  flex: 0 0 25%;
+  transition: all 0.2s;
+}
+body main .galeria .galeria-link:hover {
+  background-size: 200px auto;
+  box-shadow: 1px 1px 10px #ac5e92;
+}
+body main .galeria .galeria-link .mood, body main .galeria .galeria-link .buzonegro, body main .galeria .galeria-link .nirvana, body main .galeria .galeria-link .faced, body main .galeria .galeria-link .lol, body main .galeria .galeria-link .angels, body main .galeria .galeria-link .gorritoblack, body main .galeria .galeria-link .cargo, body main .galeria .galeria-link .hoodie {
+  background-image: url("../images/buzomoodjpeg.jpg");
+  height: 25vh;
+  box-shadow: 1px 1px 10px #ac5e92;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body main .galeria .galeria-link .hoodie {
+  background-image: url("../images/hoodiedarkpng.png");
+}
+body main .galeria .galeria-link .cargo {
+  background-image: url("../images/angelsjpeg.jpg");
 }
 body main .clasepants {
-  background-color: whitesmoke;
+  background: rgb(70, 68, 68);
   text-align: center;
   padding: 5vh;
   margin: 30px;
+  color: #fafafa;
+  box-shadow: 1px 1px 10px #ac5e92;
 }
-body main .clasepants .precio2 {
-  background-color: white;
-  color: black;
-  margin: 6%;
-  padding: 10px;
-  text-align: center;
+body main .galeria {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+  flex-wrap: wrap;
+}
+body main .galeria .galeria-link {
+  display: inline-block;
+  height: 180px;
+  width: 180px;
+  margin: 15px;
+  background-size: 180px auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  flex: 0 0 25%;
+  transition: all 0.2s;
+}
+body main .galeria .galeria-link:hover {
+  background-size: 200px auto;
+  box-shadow: 1px 1px 10px #ac5e92;
+}
+body main .galeria .galeria-link .gorritoblack {
+  background-image: url("../images/gorritoblack.jpg");
+}
+body main .galeria .galeria-link .angels {
+  background-image: url("../images/cargoblack.jpg");
+}
+body main .galeria .galeria-link .lol {
+  background-image: url("../images/buzolol.jpg");
 }
 body main .clasegorros {
-  background-color: whitesmoke;
+  background: rgb(70, 68, 68);
   text-align: center;
   padding: 5vh;
   margin: 30px;
-  background-image: url("../images/gorrito3.jpg");
+  color: #fafafa;
+  box-shadow: 1px 1px 10px #ac5e92;
 }
-body main .clasegorros .precio3 {
-  background-color: white;
-  color: black;
-  margin: 6%;
-  padding: 10px;
-  text-align: center;
+body main .galeria {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+  flex-wrap: wrap;
+}
+body main .galeria .galeria-link {
+  display: inline-block;
+  height: 180px;
+  width: 180px;
+  margin: 15px;
+  background-size: 180px auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  flex: 0 0 25%;
+  transition: all 0.2s;
+}
+body main .galeria .galeria-link:hover {
+  background-size: 200px auto;
+  box-shadow: 1px 1px 10px #ac5e92;
+}
+body main .galeria .galeria-link .faced {
+  background-image: url("../images/hoodiefacedjpeg.jpg");
+}
+body main .galeria .galeria-link .nirvana {
+  background-image: url("../images/buzonirvana.jpg");
+}
+body main .galeria .galeria-link .buzonegro {
+  background-image: url("../images/buzonegro.jpg");
 }
 
 body {
@@ -287,6 +359,7 @@ body {
 }
 body .tituloubi {
   color: aliceblue;
+  text-align: center;
 }
 body .ubicacion {
   background-color: white;
@@ -341,30 +414,17 @@ body .ubicacion:hover {
     display: grid;
     grid-template-rows: auto;
   }
-  .clasebuzos .galeriaProductos {
-    height: 170px;
-  }
-  .clasebuzos .precio1 {
-    display: grid;
-    grid-template-columns: 100px 100px 100px 100px 100px;
-  }
   .clasespants {
     padding: 1vh;
     margin: 4px 200px 2%;
     display: grid;
     grid-template-rows: auto;
   }
-  .clasespants .galeriaProductos {
-    height: 170px;
-  }
   .clasegorros {
     padding: 1vh;
     margin: 4px 200px 2%;
     display: grid;
     grid-template-rows: auto;
-  }
-  .clasegorros .galeriaProductos {
-    height: 170px;
   }
 }
 @media (max-width: 480px) {
@@ -390,13 +450,11 @@ body .ubicacion:hover {
   }
   body.promos {
     display: flex;
-    margin: 8px 5%;
     padding: 3px;
     flex-wrap: wrap;
   }
   body .galeria {
     justify-content: center;
-    max-width: 80vw;
     flex-wrap: wrap;
   }
   ul {
@@ -405,12 +463,7 @@ body .ubicacion:hover {
   .clasebuzos {
     padding: 7vh;
     margin: 1px 18px;
-    background-image: url("../images/hoodiefacedjpeg.jpg");
     background-position: left;
-  }
-  .clasebuzos .precio1 {
-    display: grid;
-    grid-template-columns: 20px 20px 20px 20px 20px;
   }
   .clasepants {
     padding: 7vh;
@@ -422,6 +475,15 @@ body .ubicacion:hover {
     margin: 1px 18px;
     background-repeat: repeat;
     background-position: left;
+  }
+  body main .galeria .galeria-link .mood, body main .galeria .galeria-link .buzonegro, body main .galeria .galeria-link .nirvana, body main .galeria .galeria-link .faced, body main .galeria .galeria-link .lol, body main .galeria .galeria-link .angels, body main .galeria .galeria-link .gorritoblack, body main .galeria .galeria-link .cargo, body main .galeria .galeria-link .hoodie {
+    height: 20vh;
+  }
+  body h1 {
+    text-align: center;
+  }
+  body.ubicacion {
+    align-items: center;
   }
 }
 

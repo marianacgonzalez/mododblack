@@ -41,31 +41,18 @@ body.promos{
     margin: 4px 200px 2%;
     display: grid;
     grid-template-rows: auto;
-    .galeriaProductos{
-        height: 170px;
-    }
-    .precio1{
-        display: grid;
-        grid-template-columns: 100px 100px 100px 100px 100px ; 
-    }
 }
 .clasespants{
     padding: 1vh;
     margin: 4px 200px 2%;
     display: grid;
     grid-template-rows: auto;
-    .galeriaProductos{
-        height: 170px; 
-    }
 }
 .clasegorros{
     padding: 1vh;
     margin: 4px 200px 2%;
     display: grid;
     grid-template-rows: auto;
-    .galeriaProductos{
-        height: 170px; 
-    }
 }
 }
 //SMARTPHONE//
@@ -93,13 +80,11 @@ body.promos{
     }
     body.promos{
         display: flex;
-        margin: 8px 5%;
         padding: 3px;
         flex-wrap: wrap;
     }
     body .galeria {
         justify-content: center;
-        max-width: 80vw;
         flex-wrap: wrap;
     }
 //PRODUCTOS SMARTPHONE//
@@ -109,12 +94,7 @@ body.promos{
     .clasebuzos {
         padding: 7vh;
         margin: 1px 18px;
-        background-image: url("../images/hoodiefacedjpeg.jpg");
         background-position: left;
-        .precio1{
-            display: grid;
-            grid-template-columns: 20px 20px 20px 20px 20px ;
-        }
     }
     .clasepants {
         padding: 7vh;
@@ -127,5 +107,18 @@ body.promos{
         background-repeat: repeat;
         background-position: left;
     }
-    
+    body main .galeria .galeria-link .mood, body main .galeria .galeria-link .buzonegro, body main .galeria .galeria-link .nirvana, body main .galeria .galeria-link .faced, body main .galeria .galeria-link .lol, body main .galeria .galeria-link .angels, body main .galeria .galeria-link .gorritoblack, body main .galeria .galeria-link .cargo, body main .galeria .galeria-link .hoodie
+    {
+        height: 20vh;
+    }
+    //DONDE ESTAMOS SMARTPHONE//
+    body h1{
+        text-align: center;
+    }
+    body.ubicacion{
+        align-items: center;
+    }
+    body.ubicacion:hover{
+
+    }
 }
