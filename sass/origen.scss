@@ -119,12 +119,12 @@ body
             &:hover
             {
                 background-size: 200px auto;
-                box-shadow: 1px 1px 10px #ac5e92;
+                box-shadow: 1px 1px 10px #b69999;;
             }
             .mood{
                 background-image: url("../images/buzomoodjpeg.jpg");
                 height: 25vh;
-                box-shadow: 1px 1px 10px #ac5e92;
+                box-shadow: 1px 1px 10px #b69999;;
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -192,7 +192,7 @@ body
         background: rgb(70, 68, 68);
         text-align: center;
         color: #fafafa;
-        box-shadow: 1px 1px 10px #ac5e92;
+        box-shadow: 1px 1px 10px #b189a3;
         padding: 5vh;
         margin: 30px;
         display: grid;
@@ -249,7 +249,7 @@ body
         padding: 5vh;
         margin: 30px;
         color: #fafafa;
-        box-shadow: 1px 1px 10px #ac5e92;
+        box-shadow: 1px 1px 10px #b189a3;
         }
         .galeria{
         background-color:black;
@@ -274,7 +274,7 @@ body
                 box-shadow: 1px 1px 10px #ac5e92;
             }
             .gorritoblack{
-                background-image: url("../images/gorritoblack.jpg");
+                background-image: url("../images/cargomarble.jpg");
                 @extend .mood;
             }
             .angels{
@@ -282,7 +282,7 @@ body
                 @extend .mood;
             }
             .lol{
-                background-image: url("../images/buzolol.jpg");
+                background-image: url("../images/joggingjpeg.jpg");
                 @extend .mood;
             }
         }
@@ -294,7 +294,7 @@ body
         padding: 5vh;
         margin: 30px;
         color: #fafafa;
-        box-shadow: 1px 1px 10px #ac5e92;
+        box-shadow: 1px 1px 10px #b189a3;
         }
         .galeria{
             background-color:black;
@@ -319,15 +319,15 @@ body
                     box-shadow: 1px 1px 10px #ac5e92;
                 }
                 .faced{
-                    background-image: url("../images/hoodiefacedjpeg.jpg");
+                    background-image: url("../images/gorrito.jpg");
                     @extend .mood;
                 }
                 .nirvana{
-                    background-image: url("../images/buzonirvana.jpg");
+                    background-image: url("../images/gorritobad.jpg");
                     @extend .mood;
                 }
                 .buzonegro{
-                    background-image: url("../images/buzonegro.jpg");
+                    background-image: url("../images/gorrito3.jpg");
                     @extend .mood;
                 }
             }
@@ -349,6 +349,7 @@ body{
     text-align: center;
     padding: 30px;
     margin: 20%;
+    box-shadow: 1px 1px 10px #b69999;
 }
 .h2tabla{
     background-color: white;
@@ -386,10 +387,10 @@ body
     .contactocabeza{
     background-color: aliceblue;
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
     margin: 15%;
     padding: 0px;
-    align-items: center;
+    align-items: stretch;
 }
     .mb-3
     {
@@ -415,24 +416,28 @@ body
 //DONDE ESTAMOS//
 body{
     background-color: black;
-    .tituloubi
-    {
-        color: aliceblue;
-        text-align: center;
-    }
 .ubicacion{
-    background-color: white;
-    color: black;
+    background-color: rgb(44, 40, 40);
+    color: #c1a9ba;
     text-align: center;
     margin: 5%;
-    padding: 1%;
+    padding: 2%;
     box-shadow: 1px 1px 10px #f4f4f493;
-    text-shadow: -3px 3px #b69999, -3px -3px #8a737e, 3px -3px #a09999, 3px 3px #d1c0cb, 6px 6px rgb(190, 176, 176);;
+    text-shadow: -2px 2px #000000,;
     font-size: 4vh;
 }
-.ubicacion:hover{
-    box-shadow: 2px 2px 10px #f4f4f4;
-    text-align: center
+.trenes{
+    display: flex;
+    flex-flow: wrap;
+    margin: 8%;
+    background-color:rgb(44, 40, 40);
+    box-shadow: 1px 1px 10px #f4f4f493;
+    text-shadow: -2px 2px #000000,;
+
+.caballito{
+    color: #c1a9ba;
+    font-size: 25px;
+    }
 }
 }
 

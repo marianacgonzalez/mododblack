@@ -107,12 +107,12 @@ body .galeria .galeria-link {
 }
 body .galeria .galeria-link:hover {
   background-size: 200px auto;
-  box-shadow: 1px 1px 10px #ac5e92;
+  box-shadow: 1px 1px 10px #b69999;
 }
 body .galeria .galeria-link .mood, body main .galeria .galeria-link .buzonegro, body main .galeria .galeria-link .nirvana, body main .galeria .galeria-link .faced, body main .galeria .galeria-link .lol, body main .galeria .galeria-link .angels, body main .galeria .galeria-link .gorritoblack, body main .galeria .galeria-link .cargo, body main .galeria .galeria-link .hoodie, body .galeria .galeria-link .buzonegro, body .galeria .galeria-link .nirvana, body .galeria .galeria-link .faced, body .galeria .galeria-link .lol, body .galeria .galeria-link .angels, body .galeria .galeria-link .gorritoblack, body .galeria .galeria-link .cargo, body .galeria .galeria-link .hoodie {
   background-image: url("../images/buzomoodjpeg.jpg");
   height: 25vh;
-  box-shadow: 1px 1px 10px #ac5e92;
+  box-shadow: 1px 1px 10px #b69999;
   background-repeat: no-repeat;
   background-size: contain;
   background-repeat: no-repeat;
@@ -162,7 +162,7 @@ body main .clasebuzos {
   background: rgb(70, 68, 68);
   text-align: center;
   color: #fafafa;
-  box-shadow: 1px 1px 10px #ac5e92;
+  box-shadow: 1px 1px 10px #b189a3;
   padding: 5vh;
   margin: 30px;
   display: grid;
@@ -213,7 +213,7 @@ body main .clasepants {
   padding: 5vh;
   margin: 30px;
   color: #fafafa;
-  box-shadow: 1px 1px 10px #ac5e92;
+  box-shadow: 1px 1px 10px #b189a3;
 }
 body main .galeria {
   background-color: black;
@@ -238,13 +238,13 @@ body main .galeria .galeria-link:hover {
   box-shadow: 1px 1px 10px #ac5e92;
 }
 body main .galeria .galeria-link .gorritoblack {
-  background-image: url("../images/gorritoblack.jpg");
+  background-image: url("../images/cargomarble.jpg");
 }
 body main .galeria .galeria-link .angels {
   background-image: url("../images/cargoblack.jpg");
 }
 body main .galeria .galeria-link .lol {
-  background-image: url("../images/buzolol.jpg");
+  background-image: url("../images/joggingjpeg.jpg");
 }
 body main .clasegorros {
   background: rgb(70, 68, 68);
@@ -252,7 +252,7 @@ body main .clasegorros {
   padding: 5vh;
   margin: 30px;
   color: #fafafa;
-  box-shadow: 1px 1px 10px #ac5e92;
+  box-shadow: 1px 1px 10px #b189a3;
 }
 body main .galeria {
   background-color: black;
@@ -277,13 +277,13 @@ body main .galeria .galeria-link:hover {
   box-shadow: 1px 1px 10px #ac5e92;
 }
 body main .galeria .galeria-link .faced {
-  background-image: url("../images/hoodiefacedjpeg.jpg");
+  background-image: url("../images/gorrito.jpg");
 }
 body main .galeria .galeria-link .nirvana {
-  background-image: url("../images/buzonirvana.jpg");
+  background-image: url("../images/gorritobad.jpg");
 }
 body main .galeria .galeria-link .buzonegro {
-  background-image: url("../images/buzonegro.jpg");
+  background-image: url("../images/gorrito3.jpg");
 }
 
 body {
@@ -298,6 +298,7 @@ body .titulomedidas {
   text-align: center;
   padding: 30px;
   margin: 20%;
+  box-shadow: 1px 1px 10px #b69999;
 }
 body .h2tabla {
   background-color: white;
@@ -333,10 +334,10 @@ body .none3:hover {
 body .contactocabeza {
   background-color: aliceblue;
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
   margin: 15%;
   padding: 0px;
-  align-items: center;
+  align-items: stretch;
 }
 body .mb-3 {
   display: flex;
@@ -357,23 +358,27 @@ body .mb-3-1 .form-control {
 body {
   background-color: black;
 }
-body .tituloubi {
-  color: aliceblue;
-  text-align: center;
-}
 body .ubicacion {
-  background-color: white;
-  color: black;
+  background-color: rgb(44, 40, 40);
+  color: #c1a9ba;
   text-align: center;
   margin: 5%;
-  padding: 1%;
+  padding: 2%;
   box-shadow: 1px 1px 10px rgba(244, 244, 244, 0.5764705882);
-  text-shadow: -3px 3px #b69999, -3px -3px #8a737e, 3px -3px #a09999, 3px 3px #d1c0cb, 6px 6px rgb(190, 176, 176);
+  text-shadow: -2px 2px #000000;
   font-size: 4vh;
 }
-body .ubicacion:hover {
-  box-shadow: 2px 2px 10px #f4f4f4;
-  text-align: center;
+body .trenes {
+  display: flex;
+  flex-flow: wrap;
+  margin: 8%;
+  background-color: rgb(44, 40, 40);
+  box-shadow: 1px 1px 10px rgba(244, 244, 244, 0.5764705882);
+  text-shadow: -2px 2px #000000;
+}
+body .trenes .caballito {
+  color: #c1a9ba;
+  font-size: 25px;
 }
 
 @media (min-width: 481px) and (max-width: 1023px) {
@@ -432,10 +437,9 @@ body .ubicacion:hover {
     font-size: 50px;
   }
   body ul {
-    padding: 50px;
+    padding: 29px;
     display: flex;
     flex-wrap: wrap;
-    margin: 9vh;
     font-size: 150%;
     text-align: center;
     align-items: center;
@@ -484,6 +488,9 @@ body .ubicacion:hover {
   }
   body.ubicacion {
     align-items: center;
+  }
+  iframe {
+    width: 100% !important;
   }
 }
 

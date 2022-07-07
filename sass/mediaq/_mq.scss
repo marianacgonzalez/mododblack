@@ -61,10 +61,9 @@ body.promos{
         font-size: 50px;
     }
     body ul{
-        padding:50px;
+        padding:29px;
         display: flex;
         flex-wrap: wrap;
-        margin: 9vh;
         font-size: 150%;
         text-align: center;
         align-items: center;
@@ -118,7 +117,7 @@ body.promos{
     body.ubicacion{
         align-items: center;
     }
-    body.ubicacion:hover{
-
+    iframe{
+        width: 100% !important; 
     }
 }
