@@ -32,30 +32,21 @@ body
         text-align: center;
         font-weight: bold;
         font-style: normal;
-        justify-content: center;
-    }
-        ul
-        {
-            list-style: none;
-            margin: 110px;
-            padding:50px;
+        justify-content: center;}
+        .menumenu{
             display: flex;
-            justify-content: space-between;
-            align-content: flex-start;
-            flex-flow: nowrap;
-            .sinsubrayar 
-            {
-                color: white;
-                text-decoration: none;
-                display: block;
-                float: left;
-                padding: 0 30px;
-            }  
-            .sinsubrayar:hover{
-                cursor:pointer;
-                color: pink;
-            }
+            justify-content: center;
         }
+        .navbar{
+        background-color: black;
+        }
+        .navbar-dark .navbar-nav .nav-link{
+            color: pink;
+        }
+        .navbar-dark .navbar-nav .nav-link.active{
+            color: pink;
+        }
+        
     .off
     {
         display: flex;
@@ -65,16 +56,29 @@ body
         background-color: rgb(194, 186, 186);
         margin: 30px 10%;
         padding: 10px;
+        animation-duration: 5s;
+        animation-name: slidein;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
         justify-content: center;
-        transition: width 12s;
         box-shadow: 1px 1px 10px #f4f4f493;
         color: #fafafa;
         text-shadow: -3px 3px #b69999, -3px -3px #8a737e, 3px -3px #a09999, 3px 3px #d1c0cb, 6px 6px rgb(190, 176, 176);;
-    }   
+    }  
+    @keyframes slidein {
+        from 
+        {
+        margin-left: 100%;
+        width: 300%
+        }
+        to 
+        {
+        margin-left: 0%;
+        width: 100%;
+        }
+    }
     .off:hover
-    {
-        width: 80%;
-        height: 40%;
+    {  
         box-shadow: 1px 1px 10px #f4f4f4;
     }
     .promos
@@ -85,17 +89,18 @@ body
         background-color:  rgb(190, 176, 176);
         margin: 18px 30%;
         padding: 30px 30px;
+        animation-duration: 5s;
+        animation-name: slidein;
+        animation-iteration-count:inherit;
+        animation-direction: alternate;
         display: flex;
         justify-content: center;
-        transition: width 1.1s 0.1s ease-in-out;
         box-shadow: 1px 1px 10px #f4f4f49c;
         color: #fafafa;
         text-shadow: -3px 3px #b69999, -3px -3px #8a737e, 3px -3px #a09999, 3px 3px #d1c0cb, 6px 6px rgb(190, 176,176);;
     }
     .promos:hover 
         { 
-            width: 42% ;
-            height: 50% 50% 50% 50%;   
             box-shadow: 1px 1px 10px #f4f4f4;
         }
     .galeria
@@ -115,21 +120,19 @@ body
             background-position: 50% 50%;
             background-repeat: no-repeat;
             flex: 0 0 25%;
-            transition:all 0.2s;
             &:hover
             {
                 background-size: 200px auto;
-                box-shadow: 1px 1px 10px #b69999;;
+                box-shadow: 1px 1px 10px #d1bfbf;;
             }
             .mood{
                 background-image: url("../images/buzomoodjpeg.jpg");
-                height: 25vh;
-                box-shadow: 1px 1px 10px #b69999;;
+                height: 27vh;
+                box-shadow: 1px 1px 10px #d4bbbba2;;
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
-
             }
             .hoodie{
                 background-image: url("../images/hoodiedarkpng.png");
@@ -174,38 +177,42 @@ body
     background-color: black;
     display: grid;
     grid-template-rows:auto;
-    .headerProductos
+    .menumenu
     {
         display: flex;
-        flex-direction: column;
-        margin: 10px;
-        padding: 10px;
-        max-width: 100vw;
-        .tituloproductos{
-            color: white;
-        }
+        justify-content: center;
+    }
+    .tituloproductos
+    {
+        color: white;
     }
     main
-    {
+    {   .card-img-top{
+        height: 50%;
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+    }
         .clasebuzos
         {
-        background: rgb(70, 68, 68);
-        text-align: center;
-        color: #fafafa;
-        box-shadow: 1px 1px 10px #b189a3;
-        padding: 5vh;
-        margin: 30px;
-        display: grid;
-        grid-template-rows: auto;
-        background-position: unset;
-        background-repeat: inherit;
+            background: #a09999;
+            text-align: center;
+            color: #fafafa;
+            box-shadow: 1px 1px 10px #b189a334;
+            padding: 5vh;
+            margin: 30px;
+            display: grid;
+            grid-template-rows: auto;
+            background-position: unset;
+            background-repeat: inherit;
         }
-        .galeria{
+        .galeria
+        {
             background-color:black;
-        display: flex;
-        justify-content:center;
-        max-width: 100vw;
-        flex-wrap: wrap;
+            display: flex;
+            justify-content:center;
+            max-width: 100vw;
+            flex-wrap: wrap;
         .galeria-link
         {
             display:inline-block;
@@ -220,45 +227,48 @@ body
             &:hover
             {
                 background-size: 200px auto;
-                box-shadow: 1px 1px 10px #ac5e92;
+                box-shadow: 1px 1px 10px #d5afc89e;
             }
-            .mood{
-                background-image: url("../images/buzomoodjpeg.jpg");
-                height: 25vh;
-                box-shadow: 1px 1px 10px #ac5e92;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-
+        .mood
+            {
+            background-image: url("../images/buzomoodjpeg.jpg");
+            height: 27vh;
+            box-shadow: 1px 1px 10px #d5afc89e;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
             }
-            .hoodie{
-                background-image: url("../images/hoodiedarkpng.png");
-                @extend .mood;
+        .hoodie
+            {
+            background-image: url("../images/hoodiedarkpng.png");
+            @extend .mood;
             }
-            .cargo{
-                background-image: url("../images/angelsjpeg.jpg");
-                @extend .mood;
+        .cargo
+            {
+            background-image: url("../images/angelsjpeg.jpg");
+            @extend .mood;
                 }
             }
         }
         .clasepants
         { 
-        background: rgb(70, 68, 68);
+        background: #a09999;
         text-align: center;
         padding: 5vh;
         margin: 30px;
         color: #fafafa;
-        box-shadow: 1px 1px 10px #b189a3;
+        box-shadow: 1px 1px 10px #b189a370;
         }
-        .galeria{
-        background-color:black;
-        display: flex;
-        justify-content:center;
-        max-width: 100vw;
-        flex-wrap: wrap;
-        .galeria-link
+        .galeria
         {
+            background-color:black;
+            display: flex;
+            justify-content:center;
+            max-width: 100vw;
+            flex-wrap: wrap;
+            .galeria-link
+            {
             display:inline-block;
             height: 180px ;
             width: 180px;
@@ -268,35 +278,39 @@ body
             background-repeat: no-repeat;
             flex: 0 0 25%;
             transition:all 0.2s;
-            &:hover
-            {
+                &:hover
+                {
                 background-size: 200px auto;
-                box-shadow: 1px 1px 10px #ac5e92;
-            }
-            .gorritoblack{
+                box-shadow: 1px 1px 10px #ac5e924d;
+                }
+            .gorritoblack
+            {
                 background-image: url("../images/cargomarble.jpg");
                 @extend .mood;
             }
-            .angels{
+            .angels
+            {
                 background-image: url("../images/cargoblack.jpg");
                 @extend .mood;
             }
-            .lol{
+            .lol
+            {
                 background-image: url("../images/joggingjpeg.jpg");
                 @extend .mood;
+                }
             }
         }
-    }
         .clasegorros
         {
-        background: rgb(70, 68, 68);
-        text-align: center;
-        padding: 5vh;
-        margin: 30px;
-        color: #fafafa;
-        box-shadow: 1px 1px 10px #b189a3;
+            background: #a09999;
+            text-align: center;
+            padding: 5vh;
+            margin: 30px;
+            color: #fafafa;
+            box-shadow: 1px 1px 10px #b189a344;
         }
-        .galeria{
+        .galeria
+        {
             background-color:black;
             display: flex;
             justify-content:center;
@@ -318,105 +332,129 @@ body
                     background-size: 200px auto;
                     box-shadow: 1px 1px 10px #ac5e92;
                 }
-                .faced{
+                .faced
+                {
                     background-image: url("../images/gorrito.jpg");
                     @extend .mood;
                 }
-                .nirvana{
+                .nirvana
+                {
                     background-image: url("../images/gorritobad.jpg");
                     @extend .mood;
                 }
-                .buzonegro{
+                .buzonegro
+                {
                     background-image: url("../images/gorrito3.jpg");
                     @extend .mood;
                 }
             }
         }
-
     }
 }
 //MEDIDAS//
-body{
+body
+{
     background-color: black;
-
-.titulotalles{
-
+    .titulotalles
+    {
     color: white;
-}
-.titulomedidas{
+    }
+    .titulomedidas
+    {
     background-color: white;
     color: black;
     text-align: center;
     padding: 30px;
     margin: 20%;
     box-shadow: 1px 1px 10px #b69999;
-}
-.h2tabla{
+    }
+    .h2tabla
+    {
     background-color: white;
     color:black;
     text-align: center;
     padding: 30px;
     margin: 20%;
-}
+    }
 }
 //CONTACTO//
 body
 {
-    background-color: black;
-    text-align: center;
-    .tituloContacto
-    { 
-    font-size: 8vh;
-    }
-    .none2{
+        background-color: black;
+        text-align: center;
+        .btn-primary{
+            background-color: rgb(228, 159, 171);
+            border-color:#ac5e92;
+            margin: 2vh;
+        }
+        
+        .tituloContacto
+        { 
+        font-size: 8vh;
+        animation-duration: 3s;
+        animation-name: slidein;
+        animation-iteration-count:inherit;
+        animation-direction: alternate;
+        }
+        .none2
+        {
         color:rgb(228, 159, 171);
         text-decoration: none;
-    }
-    .none2:hover{
+        }
+        .none2:hover
+        {
         color: #d1c0cb;
         cursor: pointer;
-    }
-    .none3{
+        }
+        .none3
+        {
         color: rgb(228, 159, 171);
         text-decoration: none;
-    }
-    .none3:hover{
+        }
+        .none3:hover
+        {
         color: #d1c0cb;
         cursor: pointer;
-    }
-    .contactocabeza{
-    background-color: aliceblue;
-    display: flex;
-    flex-flow: column wrap;
-    margin: 15%;
-    padding: 0px;
-    align-items: stretch;
-}
-    .mb-3
-    {
-    display: flex;
-    margin:20%;
-    .form-control{
-        border-radius: 19.25rem;
-    }
-    }
-    .mb-3-1
-    {
-    display: flex;
-    margin: 20%;
-    height: 10%;
-    .form-control{
-        border-radius: 19.25rem;
-    }
-    }
+        }
+        .contactocabeza
+        {
+        background-color:black;
+        display: flex;
+        flex-flow: column wrap;
+        margin: 15%;
+        padding: 0px;
+        align-content: center;
+        }
+        .descripcionflex{
+            .quienessomos{
+                background-color: #a09999;
+                color: white;
+                box-shadow: 1px 1px 10px #e9b9d96b;
+                margin: 6vh;
+                padding: 3vh;
+            }
+            .descripcion{
+            display: flex;
+            justify-content: center;
+            background-color: #b189a3;
+            color: white;
+            margin: 6vh;
+            padding: 5vh;
+            box-shadow: 3px 3px 8px #b18989;
+            }
+            
+        }
 
 }
+
 
 
 //DONDE ESTAMOS//
-body{
+body
+{
     background-color: black;
-.ubicacion{
+    .ubicacion
+    {
     background-color: rgb(44, 40, 40);
     color: #c1a9ba;
     text-align: center;
@@ -425,22 +463,26 @@ body{
     box-shadow: 1px 1px 10px #f4f4f493;
     text-shadow: -2px 2px #000000,;
     font-size: 4vh;
-}
-.trenes{
-    display: flex;
-    flex-flow: wrap;
-    margin: 8%;
-    background-color:rgb(44, 40, 40);
-    box-shadow: 1px 1px 10px #f4f4f493;
-    text-shadow: -2px 2px #000000,;
-
-.caballito{
-    color: #c1a9ba;
-    font-size: 25px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count:inherit;
+    animation-direction: alternate;
+    
+    }
+    .trenes
+    {
+        display: flex;
+        flex-flow: wrap;
+        margin: 8%;
+        background-color:rgb(44, 40, 40);
+        box-shadow: 1px 1px 10px #f4f4f493;
+        text-shadow: -2px 2px #000000,;
+        .caballito
+        {
+        color: #c1a9ba;
+        font-size: 25px;
+        }
     }
 }
-}
-
-
 
 @import "../sass/mediaq/mq";

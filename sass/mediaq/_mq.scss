@@ -7,11 +7,13 @@
     font-size: 50px;
     }
     body ul{
-        margin: 20px;
+        flex-direction: column;
+        margin: 0px;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap; 
-    }
+        align-content: center;
+    }   
 
 body .off{
     display: flex;
@@ -33,8 +35,9 @@ body.promos{
     padding: 50px;
     display: flex;
     justify-content: space-around;
-    align-content: flex-start;
+    align-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 .clasebuzos{
     padding: 1vh;
@@ -54,7 +57,12 @@ body.promos{
     display: grid;
     grid-template-rows: auto;
 }
+//DONDE ESTAMOS//
+iframe{
+    width: 100% !important;
 }
+}
+
 //SMARTPHONE//
 @media(max-width:480px){
     body h1{
