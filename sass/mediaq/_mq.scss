@@ -57,6 +57,12 @@ body.promos{
     display: grid;
     grid-template-rows: auto;
 }
+//MEDIDAS//
+h2.titulomedidas
+{
+    padding:2vh;
+    margin:1vh;
+}
 //DONDE ESTAMOS//
 iframe{
     width: 100% !important;
@@ -117,6 +123,12 @@ iframe{
     body main .galeria .galeria-link .mood, body main .galeria .galeria-link .buzonegro, body main .galeria .galeria-link .nirvana, body main .galeria .galeria-link .faced, body main .galeria .galeria-link .lol, body main .galeria .galeria-link .angels, body main .galeria .galeria-link .gorritoblack, body main .galeria .galeria-link .cargo, body main .galeria .galeria-link .hoodie
     {
         height: 20vh;
+    }
+    //MEDIDAS SMARTPHONE//
+    
+    h2.titulomedidas{
+        padding:2vh;
+        margin:1vh;
     }
     //DONDE ESTAMOS SMARTPHONE//
     body h1{

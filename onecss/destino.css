@@ -52,7 +52,7 @@ body .off {
   padding: 10px;
   animation-duration: 5s;
   animation-name: slidein;
-  animation-iteration-count: infinite;
+  animation-iteration-count: initial;
   animation-direction: alternate;
   justify-content: center;
   box-shadow: 1px 1px 10px rgba(244, 244, 244, 0.5764705882);
@@ -300,11 +300,11 @@ body .titulotalles {
   color: white;
 }
 body .titulomedidas {
-  background-color: white;
+  background-color: rgba(233, 196, 196, 0.5);
   color: black;
   text-align: center;
-  padding: 30px;
-  margin: 20%;
+  padding: 12vh;
+  margin: 12vh;
   box-shadow: 1px 1px 10px #b69999;
 }
 body .h2tabla {
@@ -455,6 +455,10 @@ body .trenes .caballito {
     display: grid;
     grid-template-rows: auto;
   }
+  h2.titulomedidas {
+    padding: 2vh;
+    margin: 1vh;
+  }
   iframe {
     width: 100% !important;
   }
@@ -509,6 +513,10 @@ body .trenes .caballito {
   }
   body main .galeria .galeria-link .mood, body main .galeria .galeria-link .buzonegro, body main .galeria .galeria-link .nirvana, body main .galeria .galeria-link .faced, body main .galeria .galeria-link .lol, body main .galeria .galeria-link .angels, body main .galeria .galeria-link .gorritoblack, body main .galeria .galeria-link .cargo, body main .galeria .galeria-link .hoodie {
     height: 20vh;
+  }
+  h2.titulomedidas {
+    padding: 2vh;
+    margin: 1vh;
   }
   body h1 {
     text-align: center;

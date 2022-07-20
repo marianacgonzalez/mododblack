@@ -58,7 +58,7 @@ body
         padding: 10px;
         animation-duration: 5s;
         animation-name: slidein;
-        animation-iteration-count: infinite;
+        animation-iteration-count:initial;
         animation-direction: alternate;
         justify-content: center;
         box-shadow: 1px 1px 10px #f4f4f493;
@@ -361,11 +361,11 @@ body
     }
     .titulomedidas
     {
-    background-color: white;
+    background-color: rgba(233, 196, 196, 0.5);
     color: black;
     text-align: center;
-    padding: 30px;
-    margin: 20%;
+    padding: 12vh;
+    margin: 12vh;
     box-shadow: 1px 1px 10px #b69999;
     }
     .h2tabla
